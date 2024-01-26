@@ -12,6 +12,7 @@ body{
  background-repeat: no-repeat;
  background-position:3px 200px;
  background-size:cover;
+ animation: bg 3s infinite;
 }
 
 .container{
@@ -74,14 +75,6 @@ button:hover{
   background-color: #1967d2;
 }
 
-section p{
-  font-size:12px;
-  line-height:1.2;
-  width:100px;
-  margin:auto;
-  padding:10px 14px;
-  position:absolute;
-  left:70%;
-  color:gray;
-  opacity:0.6;
+@keyframes bg {
+  100%{filter: hue-rotate(360deg);}
 }
