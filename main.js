@@ -18,7 +18,7 @@ let button = document.getElementById("btn").onclick = function() {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': 'fddac2cc2emsh54d66c3425a468cp14354bjsn9753fb99c348',
+      'X-RapidAPI-Key': '5d4bc41001msh8061d58e712e8ffp1520edjsn72515b36a183',
       'X-RapidAPI-Host': 'youtube-mp3-downloader2.p.rapidapi.com'
     }
   };
