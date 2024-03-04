@@ -1,0 +1,61 @@
+body{
+  background-color:black;
+}
+
+.typing-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.typing-text {
+  display: inline-block;
+  font-size: 23px;
+  border-right: 2px solid #000;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 13ch;
+  color:white;
+  text-transform: uppercase;
+}
+
+.hazardous {
+  animation: hazardousEffect 0.5s infinite alternate, glowingEffect 1s infinite;
+}
+
+@keyframes hazardousEffect {
+  0% { color: red; }
+  50% { color: yellow; }
+  100% { color: green; }
+}
+
+@keyframes glowingEffect {
+  0% { text-shadow: 0 0 15px red; }
+  50% { text-shadow: 0 0 15px yellow; }
+  100% { text-shadow: 0 0 15px green; }
+}
+
+#glow-paragraph {
+  display: inline-block;
+  font-size:18px;
+  animation: radioactiveGlow 1s infinite alternate;
+}
+
+@keyframes radioactiveGlow {
+  0% { text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00; }
+  100% { text-shadow: 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00; }
+}
+
+.radiation-color {
+  animation: changeColor 3s infinite alternate;
+}
+
+@keyframes changeColor {
+  0% { color: #00FF00; }
+  50% { color: #FF0000; }
+  100% { color: #00FF00; }
+}
+
+@keyframes radioactiveGlow {
+  0% { text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00; }
+  100% { text-shadow: 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00; }
+}
